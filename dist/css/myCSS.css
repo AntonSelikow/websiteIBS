@@ -1,9 +1,6 @@
 .nav {
 	border-bottom: 1px solid #dbdbdb
 }
-body {
-	font-size:100%;
-}
 h1 {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -48,6 +45,7 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 0px;
 }
 
 .jumbotron .container {

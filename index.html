@@ -9,13 +9,8 @@
 <!-- Bootstrap -->
 <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 <link
-	href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css"
-	rel="stylesheet">
-<link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Roboto+Slab:400,700,300'
 	rel='stylesheet' type='text/css'>
-<link rel="stylesheet"
-	href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
 <link href="dist/css/myCSS.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -50,60 +45,45 @@
 					<div class="thumbnail">
 						<a href="http://www.codecademy.com/AntonSelikow">Codecademy-Profil</a>
 					</div>
+				</div>
+				<div class="col-md-4">
 					<div class="thumbnail">
-						<p>Beispieltext</p>
+						<a target="index.html"
+							href="https://github.com/florian1995/firstWebsite/pull/2">Mein
+							Pull Request Florian</a>
+					</div>
+					<div class="thumbnail">
+						<a target="_blank "
+							href="https://github.com/AntonSelikow/websiteIBS/pull/1">Florians
+							Pull Request an mich</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<p>Beispieltext</p>
-					</div>
-					<div class="thumbnail">
-						<p>Beispieltext</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-				<h2>Suchen auf Wikipedia</h2>
-					<div class="thumbnail">
-						<h3>Suche</h3>
-						<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
-							onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
-							target="_blank">
-							<select name="uselang">
-								<option selected="selected"
-									title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
-								<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
-								<option title="commons.wikimedia.org/wiki/Special:Search"
-									value="de">Commons</option>
-								<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
-								<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
-								<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
-							</select> <input type="text" name="search" size="20" /> <input
-								type="submit" value="Suchen" />
-						</form>
-					</div>
-					<div class="thumbnail">
-						<h3>Volltextsuche</h3>
-						<form action="http://de.wiktionary.org/wiki/Spezial:Suche"
-							onsubmit="this.action = 'http://'+this.uselang.options[this.uselang.selectedIndex].title+'/'+this.search.value"
-							target="_blank">
-							<select name="fulltext">
-								<option selected="selected"
-									title="de.wikipedia.org/wiki/Spezial:Suche" value="de">Wikipedia</option>
-								<option title="de.wiktionary.org/wiki/Spezial:Suche" value="de">Wiktionary</option>
-								<option title="commons.wikimedia.org/wiki/Special:Search"
-									value="de">Commons</option>
-								<option title="de.wikibooks.org/wiki/Spezial:Suche" value="de">Wikibooks</option>
-								<option title="de.wikiquote.org/wiki/Spezial:Suche" value="de">Wikiquote</option>
-								<option title="de.wikinews.org/wiki/Spezial:Suche" value="de">Wikinews</option>
-							</select> <input type="text" name="search" size="20" /> <input
-								type="submit" value="Suchen" />
-						</form>
+						
+					<div>
+						<div align="center">
+							<img
+								src="http://upload.wikimedia.org/wikipedia/commons/e/ec/Wikipedia-logo-v2-de.png"
+								border="0" alt="de.wikipedia.org" align="middle" />
+							<form name="search" method="post"
+								action="http://de.wikipedia.org/wiki/Spezial:Suche"
+								target="_blank">
+								<label for="suche">Suchen im Textfeld</label>
+								<input type="text" name="search" size="18" id="suche"
+									value="de.wikipedia.org" /><br /> 
+								<input type="submit"
+									name="go" value="Los" /> 
+								<input type="submit" name="fulltext"
+									value="Suche" />
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Neighboorhood-guides -->
 
 	<div class="learn-more">
 		<div class="container">
