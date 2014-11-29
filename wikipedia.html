@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Webpage</title>
+
+<!-- Bootstrap -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Roboto+Slab:400,700,300'
+	rel='stylesheet' type='text/css'>
+<link href="dist/css/myCSS.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="nav">
+		<div class="container">
+			<ul class="pull-left">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="wikipedia.html">Wikipedia</a></li>
+			</ul>
+			<ul class="pull-right">
+				<li><a href="impressum.html">Impressum</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="wikipedia">
+		<div class="container">
+			<div align="center">
+				<img
+					src="http://upload.wikimedia.org/wikipedia/commons/e/ec/Wikipedia-logo-v2-de.png"
+					border="0" alt="de.wikipedia.org" align="middle" />
+				<form name="search" method="post"
+					action="http://de.wikipedia.org/wiki/Spezial:Suche" target="_blank">
+					<label for="suche">Suchen im Textfeld</label> <input type="text"
+						name="search" size="18" id="suche" value="de.wikipedia.org" /><br />
+					<input type="submit" name="go" value="Los" /> <input type="submit"
+						name="fulltext" value="Suche" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- wikipedia -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>
