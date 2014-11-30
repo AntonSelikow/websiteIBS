@@ -1,3 +1,9 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
 .nav {
 	border-bottom: 1px solid #dbdbdb
 }
@@ -19,7 +25,7 @@ p {
 
 .nav {
 	padding-top: 0.5em;
-	background-color: #34495e ;
+	background-color: #34495e;
 }
 
 .nav a {
@@ -74,18 +80,18 @@ p {
 }
 
 
-.neighborhood-guides {
+.links {
 	background-color: #efefef;
 	border-bottom: 1px solid #dbdbdb;
 	padding-top: 4rem;
 }
 
-.neighborhood-guides h2 {
+.links h2 {
 	color: #393c3d;
 	font-size: 3rem;
 }
 
-.neighborhood-guides p {
+.links p {
 	margin-bottom: 13px;
 	font-size: 1rem;
 }
@@ -98,19 +104,32 @@ p {
 .impressum-kontakt a {
 	color: #5a5a5a;
 }
-
+.impressum-kontakt h1 {
+	font-size: 4rem;
+	color: #1e3346;
+}
+.impressum-kontakt h2 {
+	font-size: 3rem;
+	color: #1e3346;
+}
+.impressum-kontakt h3 {
+	font-size: 2rem;
+	color: #1e3346;
+}
 .haftungsauschluss {
 	background-color: #efefef;
 	padding-top: 2em;
-	padding-bottom: 4em;
+	height: 100%;
 }
 
 .haftungsauschluss h2 {
 	margin-bottom: 1.5em;
+	color: #1e3346;
 }
 
 .haftungsauschluss h3 {
 	margin-bottom: 1em;
+	color: #1e3346;
 }
 #impressum {
 	text-align: center;
@@ -127,14 +146,16 @@ p {
 }
 .thumbnail a {
 	text-decoration: none;
-	color: #4a4a4a;
-	
+	color: #365A7D;
 }
 .thumbnail a:hover {
-	color: #2a2a2a;
+	color: #4574a1;
 }
 .thumbnail {
 	padding: 20px;
 	text-align: center;
 	height: 300px;
+}
+.thumbnail h2{
+	font-weight: light;
 }
