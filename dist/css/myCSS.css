@@ -18,12 +18,13 @@ p {
 }
 
 .nav {
-	background-color: #606060;
+	padding-top: 0.5em;
+	background-color: #34495e ;
 }
 
 .nav a {
-	color: #fff;
-	font-size: 2rem;
+	color: #ecf0f1;
+	font-size: 1.5em;
 	font-weight: normal;
 	font-family: 'Open Sans', sans-serif;
 	padding: 14px 10px;
@@ -32,7 +33,7 @@ p {
 }
 
 .nav a:hover {
-	color: #ddd;
+	color: #CAA772 ;
 }
 
 .nav li {
@@ -40,7 +41,7 @@ p {
 }
 
 .jumbotron {
-	background-image: url('http://goo.gl/04j7Nn');
+	background-image: url('http://www.landscape-photo.net/albums/userpics/10001/Mist_blurred_at_the_edge_of_woods.jpg');
 	height: 500px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -54,32 +55,24 @@ p {
 }
 
 .jumbotron h1 {
-	color: #fff;
+	color: #4A3949 ;
 	font-size: 4rem;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
+	font-weight: light;
+	text-shadow: 0px 2px 3px #fff;
+	letter-spacing: 5px;
 }
-
+.jumbotron a {
+	text-decoration: none;
+}
 .jumbotron p {
 	font-size: 2rem;
 	font-family: 'Roboto Slab', serif;
-	font-weight: normal;
-	color: #fff;
+	font-weight: light;
+	text-shadow: 1px 2px 4px #fff;
+	color: #6F5A5B ;
 }
 
-.learn-more {
-	background-color: #f7f7f7;
-}
-
-.learn-more h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-.learn-more a {
-	color: #00b0ff;
-}
 
 .neighborhood-guides {
 	background-color: #efefef;
@@ -121,4 +114,27 @@ p {
 }
 #impressum {
 	text-align: center;
+}
+.w3c-img {
+	vertical-align: bottom;
+}
+.genericon{
+	font-size: 8em;
+}
+#codecademy {
+	padding: 20px;
+	text-align: center;
+}
+.thumbnail a {
+	text-decoration: none;
+	color: #4a4a4a;
+	
+}
+.thumbnail a:hover {
+	color: #2a2a2a;
+}
+.thumbnail {
+	padding: 20px;
+	text-align: center;
+	height: 300px;
 }

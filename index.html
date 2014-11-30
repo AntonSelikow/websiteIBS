@@ -8,6 +8,7 @@
 
 <!-- Bootstrap -->
 <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="dist/genericons/genericons.css" rel="stylesheet">
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Roboto+Slab:400,700,300'
 	rel='stylesheet' type='text/css'>
@@ -24,19 +25,30 @@
 	<div class="nav">
 		<div class="container">
 			<ul class="pull-left">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="wikipedia.html">Wikipedia</a></li>
+				<li><a tabindex="1" href="index.html"> <span
+						class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						Hauptseite
+				</a></li>
+				<li><a tabindex="2" href="wikipedia.html"> <span
+						class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						Wikipedia
+				</a></li>
 			</ul>
 			<ul class="pull-right">
-				<li><a href="impressum.html">Impressum</a></li>
+				<li><a tabindex="1" href="impressum.html"> <span
+						class="glyphicon glyphicon-align-justify " aria-hidden="true"></span>
+						Impressum
+				</a></li>
 			</ul>
 		</div>
 	</div>
+	<!-- ENDE-navbar -->
 	<div class="jumbotron">
 		<div class="container">
-			<h1>Find a place to stay.</h1>
-			<p>Rent from people in over 34,000 cities and 192 countries.</p>
-			<a href="#">Learn More</a>
+			<h1>Meine erste Website.</h1>
+			<p>Ein Projekt für den Kurs Internetbasierte System der
+			<a target="_blank" href="http://www.thm.de/site/">THM</a> 
+			</p>
 		</div>
 	</div>
 	<div class="neighborhood-guides">
@@ -44,81 +56,43 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a href="http://www.codecademy.com/AntonSelikow">Codecademy-Profil</a>
+						<h2>Profil auf Github</h2><br>
+						<a target="_blank" href="https://github.com/AntonSelikow"><span
+							class="genericon genericon-github"></span><br /></a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="thumbnail">
-						<a target="index.html"
-							href="https://github.com/florian1995/firstWebsite/pull/2">Mein
-							Pull Request Florian</a>
+						<h2>Pull Request an Florian</h2>
+						<a target="_blank"
+							href="https://github.com/florian1995/firstWebsite/pull/2"> <span
+							class="genericon genericon-github"></span>
+						</a>
 					</div>
 					<div class="thumbnail">
-						<a target="_blank "
-							href="https://github.com/AntonSelikow/websiteIBS/pull/1">Florians
-							Pull Request an mich</a>
+						<h2>Florians Pull Request an mich</h2>
+						<a target="_blank"
+							href="https://github.com/AntonSelikow/websiteIBS/pull/1">
+							<span class="genericon genericon-github"></span>
+						</a>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="thumbnail">
-						
-						<div align="center">
-							<img
-								src="http://upload.wikimedia.org/wikipedia/commons/e/ec/Wikipedia-logo-v2-de.png"
-								border="0" alt="de.wikipedia.org" align="middle" />
-							<form name="search" method="post"
-								action="http://de.wikipedia.org/wiki/Spezial:Suche"
-								target="_blank">
-								<label for="suche">Suchen im Textfeld</label>
-								<input type="text" name="search" size="18" id="suche"
-									value="de.wikipedia.org" /><br /> 
-								<input type="submit"
-									name="go" value="Los" /> 
-								<input type="submit" name="fulltext"
-									value="Suche" />
-							</form>
-						</div>
+					<div class="thumbnail" id="codecademy">
+						<h2>Profil auf</h2><br><br>
+						<br> <a target="_blank"
+							href="http://www.codecademy.com/AntonSelikow"> <img
+							src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Codecademy.svg/250px-Codecademy.svg.png"</img>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Neighboorhood-guides -->
-
-	<div class="learn-more">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<h3>Travel</h3>
-					<p>From apartments and rooms to treehouses and boats: stay in
-						unique spaces in 192 countries.</p>
-					<p>
-						<a href="#">See how to travel on Airbnb</a>
-					</p>
-				</div>
-				<div class="col-md-4">
-					<h3>Host</h3>
-					<p>Renting out your unused space could pay your bills or fund
-						your next vacation.</p>
-					<p>
-						<a href="#">Learn more about hosting</a>
-					</p>
-				</div>
-				<div class="col-md-4">
-					<h3>Trust and Safety</h3>
-					<p>From Verified ID to our worldwide customer support team,
-						we've got your back.</p>
-					<p>
-						<a href="#">Learn about trust at Airbnb</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="dist/js/bootstrap.min.js"></script>
+		<!-- Neighboorhood-guides -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="dist/js/bootstrap.min.js"></script>
 </body>
 </html>
