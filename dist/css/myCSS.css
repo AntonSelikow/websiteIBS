@@ -159,3 +159,10 @@ p {
 .thumbnail h2{
 	font-weight: light;
 }
+
+.div2{
+	widht: 150px;
+	height: 150px;
+	margin: 100px;
+	background-color: red
+}
