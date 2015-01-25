@@ -18,13 +18,13 @@ Ext.define('TimerApp.view.Main', {
 				docked : 'bottom',
 				layout : {
 					pack : 'center',
-					type : 'hbox'
+					type : 'vbox'
 				},
 				items : [ {
 					xtype : 'button',
 					itemId : 'startButton',
-					title : 'Start',
-					ui : 'action',
+//					title : 'Start',
+					ui : 'confirm',
 					text : 'start',
 					disabled : true,
 					width : '33.3%',
@@ -33,8 +33,8 @@ Ext.define('TimerApp.view.Main', {
 					}
 				}, {
 					xtype : 'button',
-					title : 'Stop',
-					ui : 'action',
+//					title : 'Stop',
+					ui : 'decline',
 					text : 'stop',
 					width : '33.3%',
 					handler : function() {
@@ -43,8 +43,8 @@ Ext.define('TimerApp.view.Main', {
 				}
 				, {
 					xtype : 'button',
-					title : 'Reset',
-					ui : 'action',
+//					title : 'Reset',
+					ui : 'normal',
 					text : 'reset',
 					width : '33.3%',
 					handler : function() {
@@ -58,8 +58,11 @@ Ext.define('TimerApp.view.Main', {
 				xtype : 'toolbar', // in die mitte machen
 				docked : 'top',
 				items : [ {
-					centered : true,
-					width : '25%',
+					//centered : true,
+					//width : '25%',
+					align : 'stretch', 
+					docked : 'right',
+					padding: '5',
 					text : 'Set Timer',
 					handler : function() {
 						pickerTime.show();
@@ -170,7 +173,7 @@ Ext.define('TimerApp.view.Main', {
 			}); // create()
 			
 			// Standardeinstellung Picker
-			pickerTime.setValue({time : 60}, true);
+			pickerTime.setValue({time : 600}, true);
 			
 			Ext.Viewport.add(topToolbar);
 			Ext.Viewport.add(bottomToolbar);
