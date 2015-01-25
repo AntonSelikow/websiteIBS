@@ -7,7 +7,7 @@ Ext.define('TimerApp.view.Main', {
 		styleHtmlContent : true,
 		scrollable : true,
 		initialize : function() {
-			var initTime;
+			var initTime = 600;
 			var tickingTime;
 			var x;
 			var started = false;
@@ -15,6 +15,7 @@ Ext.define('TimerApp.view.Main', {
 			
 			var bottomToolbar = {
 				xtype : 'toolbar',
+				ui : 'dark', 
 				docked : 'bottom',
 				layout : {
 					pack : 'center',
@@ -23,7 +24,6 @@ Ext.define('TimerApp.view.Main', {
 				items : [ {
 					xtype : 'button',
 					itemId : 'startButton',
-//					title : 'Start',
 					ui : 'confirm',
 					text : 'start',
 					disabled : true,
@@ -33,7 +33,6 @@ Ext.define('TimerApp.view.Main', {
 					}
 				}, {
 					xtype : 'button',
-//					title : 'Stop',
 					ui : 'decline',
 					text : 'stop',
 					width : '33.3%',
@@ -43,7 +42,6 @@ Ext.define('TimerApp.view.Main', {
 				}
 				, {
 					xtype : 'button',
-//					title : 'Reset',
 					ui : 'normal',
 					text : 'reset',
 					width : '33.3%',
@@ -56,10 +54,10 @@ Ext.define('TimerApp.view.Main', {
 			
 			var topToolbar = {
 				xtype : 'toolbar', // in die mitte machen
+				title: 'Timer',
+				ui : 'dark', 
 				docked : 'top',
 				items : [ {
-					//centered : true,
-					//width : '25%',
 					align : 'stretch', 
 					docked : 'right',
 					padding: '5',
