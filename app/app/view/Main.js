@@ -75,7 +75,6 @@ Ext.define('TimerApp.view.Main', {
 					x = setTimeout(function() {ticking(--time, id)}, 1000);
 				} else {
 					sound.play();
-					stopButton.show();
 				}
 				dataView.getStore().getAt(0).set('time', sTime);
 			};
@@ -102,18 +101,6 @@ Ext.define('TimerApp.view.Main', {
 				started = false;
 				dataView.getStore().getAt(0).set('time', parseTime(initTime));
 			};
-			
-			var stopButton = Ext.create('Ext.Button', {
-				text : 'stop',
-				ui : 'decline',
-				width: '25%',
-				height: '25%',
-				handler : function() {
-					sound.pause();
-					sound.currentTime = 0;
-					stopButton.hide();
-				}
-			});
 			
 			var parseTime = function(initTime) {
 				min = Math.floor(initTime / 60) % 60;
@@ -180,7 +167,6 @@ Ext.define('TimerApp.view.Main', {
 			Ext.Viewport.add(topToolbar);
 			Ext.Viewport.add(bottomToolbar);
 			Ext.Viewport.add(dataView);
-			Ext.Viewport.add(stopButton);
 			
 			} // Ende initialize
 		}] // Ende items Ext.define
