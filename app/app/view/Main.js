@@ -53,7 +53,7 @@ Ext.define('TimerApp.view.Main', {
 			};
 			
 			var topToolbar = {
-				xtype : 'toolbar', // in die mitte machen
+				xtype : 'toolbar',
 				title: 'Timer',
 				ui : 'dark', 
 				docked : 'top',
@@ -95,6 +95,8 @@ Ext.define('TimerApp.view.Main', {
 			};
 			
 			var timerReset = function() {
+				sound.pause();
+				sound.currentTime = 0;
 				timerStop();
 				initTime = tickingTime;
 				started = false;
@@ -102,8 +104,10 @@ Ext.define('TimerApp.view.Main', {
 			};
 			
 			var stopButton = Ext.create('Ext.Button', {
-				text : 'Stop',
+				text : 'stop',
 				ui : 'decline',
+				width: '25%',
+				height: '25%',
 				handler : function() {
 					sound.pause();
 					sound.currentTime = 0;
